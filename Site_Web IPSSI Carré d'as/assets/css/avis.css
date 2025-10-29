@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+header h1 img {
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 16px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 97%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#rating {
+    width: 100%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#avis-list {
+    margin-top: 20px;
+}
+
+.avis {
+    background: #f9f9f9;
+    padding: 10px;
+    border-left: 4px solid #4CAF50;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.avis p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/* Responsive design pour les écrans petits (tablettes) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Pour les très petits écrans comme les smartphones en portrait */
+@media (max-width: 480px) {
+    header h1 img {
+        width: 40px;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input,
+    textarea,
+    select {
+        padding: 7px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
