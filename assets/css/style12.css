@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+header h1 img {
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2,
+h3 {
+    color: #222;
+}
+
+ul.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+ul.menu-list li {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.special-item {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.special-item img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* Responsive design pour les écrans petits (tablettes) */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .container {
+        padding: 15px;
+        margin: 20px;/
+    }
+
+    h2,
+    h3 {
+        font-size: 20px;
+    }
+
+    ul.menu-list li {
+        font-size: 16px;
+    }
+
+    .special-item img {
+        width: 80%;
+        max-width: 200px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+/* Pour les très petits écrans comme les smartphones en portrait */
+@media (max-width: 480px) {
+
+    header h1 img {
+        width: 40px;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h2,
+    h3 {
+        font-size: 18px;
+    }
+
+    ul.menu-list li {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .special-item img {
+        width: 70%;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 12px;
+    }
+}
